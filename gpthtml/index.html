@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>한 달 여행 경비 정리 - 메인 페이지</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    .travel-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .travel-card {
+      width: 300px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .travel-card:hover {
+      transform: translateY(-5px);
+    }
+    .travel-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .travel-card .emoji {
+      font-size: 2rem;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .travel-card h2 {
+      margin: 10px 0 5px;
+      text-align: center;
+    }
+    .travel-card p {
+      text-align: center;
+      padding: 0 15px 15px;
+      color: #555;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌍 여행지 추천 & 경비 정리</h1>
+    <p>여행지를 선택하고, 상세 정보를 확인해 보세요!</p>
+  </header>
+
+  <main>
+    <section class="travel-list">
+      <div class="travel-card" data-aos="fade-up">
+        <a href="japan.html">
+          <img src="images/japan.jpg" alt="일본 이미지" />
+          <div class="emoji">🇯🇵</div>
+          <h2>일본</h2>
+          <p>전통과 현대가 공존하는 매력적인 나라</p>
+        </a>
+      </div>
+
+      <div class="travel-card" data-aos="fade-up" data-aos-delay="100">
+        <a href="thailand.html">
+          <img src="images/thailand.jpg" alt="태국 이미지" />
+          <div class="emoji">🇹🇭</div>
+          <h2>태국</h2>
+          <p>아름다운 해변과 맛있는 음식으로 유명한 나라</p>
+        </a>
+      </div>
+
+      <div class="travel-card" data-aos="fade-up" data-aos-delay="200">
+        <a href="france.html">
+          <img src="images/france.jpg" alt="프랑스 이미지" />
+          <div class="emoji">🇫🇷</div>
+          <h2>프랑스</h2>
+          <p>예술과 낭만의 도시 파리, 맛있는 와인과 치즈</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 여행 경비 정리 사이트</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
